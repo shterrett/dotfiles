@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/stuart/.cabal'
+let g:netrw_dirhist_2='/Users/stuart/coding/clojure-web-101/src/clojure_web_101'
+let g:netrw_dirhist_3='/Users/stuart/coding/nature_of_code/src/nature_of_code/ch_9_genetic'
