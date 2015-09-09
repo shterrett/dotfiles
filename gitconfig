@@ -1,7 +1,7 @@
 [init]
   templatedir = ~/.git_template
 [push]
-  default = current
+  default = simple
 [color]
   ui = auto
 [alias]
@@ -32,3 +32,10 @@
   prune = true
 [include]
   path = ~/.gitconfig.local
+[user]
+  name = Stuart Terrett
+  email = shterrett@gmail.com
+[credential]
+  helper = osxkeychain
+[format]
+  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset

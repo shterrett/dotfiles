@@ -12,11 +12,7 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
+syntax enable
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -81,6 +77,10 @@ highlight Folded  guibg=#0A0A0A guifg=#9090D0
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
+
+set cursorline
+set cursorcolumn
+set colorcolumn=80
 
 " Numbers
 set number
@@ -147,6 +147,36 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+runtime macros/matchit.vim
+
+set autoread
+
+set t_Co=16
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=16
+call togglebg#map("")
+
+let g:rspec_command = 'call Send_to_Tmux("nocorrect bundle exec rspec {spec}\n")'
+
+" Rename current file (thanks Gary Bernhardt)
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'), 'file')
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
+endfunction
+map <leader>n :call RenameFile()<cr>
+
+set clipboard=unnamed
+
+set nofoldenable
+
+let g:tex_flavor='latex'
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

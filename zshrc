@@ -96,5 +96,37 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+export GOPATH=$HOME/coding/go
+export PATH=$PATH:$GOPATH/bin
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export PATH=$PATH:/Users/stuart/coding/go_appengine
+export PATH=$PATH:/Users/stuart/coding/dart-sdk/bin
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+
+# scheme alias
+alias scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
+
+#python alias
+alias python="/usr/local/bin/python3"
+alias python2="/usr/local/bin/python2.7"
+
+# makes color constants available
+autoload -U colors
+colors
+
+# enable colored output from ls, etc
+export CLICOLOR=1
+
+# expand functions in the prompt
+setopt prompt_subst
+
+# tmuxinator autocomplete
+source ~/.bin/tmuxinator.zsh
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
