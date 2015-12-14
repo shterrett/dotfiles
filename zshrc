@@ -108,12 +108,22 @@ export PATH=$PATH:/Users/stuart/coding/go_appengine
 export PATH=$PATH:/Users/stuart/coding/dart-sdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
+# Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
+export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
+if [ -d "$GHC_DOT_APP" ]; then
+  export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
+
 # scheme alias
 alias scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
 
 #python alias
 alias python="/usr/local/bin/python3"
 alias python2="/usr/local/bin/python2.7"
+
+# python virtualenv
+[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/Envs
 
 # makes color constants available
 autoload -U colors
