@@ -178,6 +178,12 @@ set nofoldenable
 
 let g:tex_flavor='latex'
 
+" Python tests
+map <leader>p :call Send_to_Tmux("make test\n")<cr>
+
+" C make and test
+map <leader>c :call Send_to_Tmux("make clean && make\n")<cr>
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
