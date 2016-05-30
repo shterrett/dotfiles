@@ -10,6 +10,8 @@
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("melpa-std" . "http://melpa.org/packages/"))
 
 ;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 ;;                          ("marmalade" . "http://marmalade-repo.org/packages/")
@@ -66,7 +68,11 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; Vim emulation
+    evil
+    evil-surround))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -130,3 +136,9 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;; evil mode
+(require 'evil)
+(evil-mode 1)
+(require 'evil-surround)
+(global-evil-surround-mode 1)
