@@ -141,6 +141,7 @@ nnoremap <C-l> <C-w>l
 let g:syntastic_check_on_open=0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:syntastic_c_include_dirs = ['/usr/local/apr/include/apr-1']
+let g:syntastic_python_checkers = ['pyflakes']
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.

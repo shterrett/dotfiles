@@ -139,7 +139,7 @@ source ~/.bin/tmuxinator.zsh
 eval "$(thefuck --alias)"
 
 # if this is complaining, run `$ docker-machine start default
-command -v foo >/dev/null 2>&1 && eval "$(docker-machine env default)"
+command -v docker-machine >/dev/null 2>&1 && eval "$(docker-machine env default)"
 dsh() { docker exec -it $1 /bin/bash; }
 
 # Local config
