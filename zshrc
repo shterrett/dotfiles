@@ -98,6 +98,7 @@ _load_settings "$HOME/.zsh/configs"
 
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.local/bin/:$PATH"
 
 export GOPATH=$HOME/coding/go
 export PATH=$PATH:$GOPATH/bin
@@ -107,6 +108,7 @@ export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 export PATH=$PATH:/Users/stuart/coding/go_appengine
 export PATH=$PATH:/Users/stuart/coding/dart-sdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH=$PATH:/Users/stuart/.cargo/bin
 export APP_ENVIRONMENT=development
 
 # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
