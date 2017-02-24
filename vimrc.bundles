@@ -38,7 +38,7 @@ Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'rust-lang/rust.vim'
-Plugin 'lambdatoast/elm.vim'
+Plugin 'ElmCast/elm-vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
