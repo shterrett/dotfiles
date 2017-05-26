@@ -109,6 +109,7 @@ export PATH=$PATH:/Users/stuart/coding/go_appengine
 export PATH=$PATH:/Users/stuart/coding/dart-sdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH=$PATH:/Users/stuart/.cargo/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
 
 # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
@@ -146,3 +147,7 @@ dsh() { docker exec -it $1 /bin/bash; }
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# asdf config
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
