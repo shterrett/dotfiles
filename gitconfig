@@ -22,6 +22,7 @@
   st = status --short --branch
   up = !git fetch origin && git rebase origin/master
   fdiff = diff --name-status
+  graph = log --all --decorate --oneline --graph
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
