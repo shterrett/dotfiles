@@ -1,2 +1,2 @@
 EXCLUDES="README.md LICENSE"
-DOTFILES_DIRS="$HOME/coding/dotfiles-local $HOME/coding/dotfiles"
+DOTFILES_DIRS="$HOME/src/dotfiles-local $HOME/src/dotfiles"

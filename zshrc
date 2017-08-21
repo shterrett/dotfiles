@@ -96,8 +96,8 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 export PATH="$HOME/.local/bin/:$PATH"
 
 export GOPATH=$HOME/coding/go
@@ -137,9 +137,6 @@ setopt prompt_subst
 
 # tmuxinator autocomplete
 source ~/.bin/tmuxinator.zsh
-
-# thefuck config
-eval "$(thefuck --alias)"
 
 # if this is complaining, run `$ docker-machine start default
 command -v docker-machine >/dev/null 2>&1 && eval "$(docker-machine env default)"
