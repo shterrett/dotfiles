@@ -1,3 +1,13 @@
 #include ".Xresources.d/Xresources.dark"
 
-XTerm.termName: xterm-256color
+XTerm*termName: xterm-256color
+XTerm*faceName: Monaco_Linux
+XTerm*faceSize: 8
+XTerm*boldMode: false
+Xft.dpi: 180
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 0
+Xft.rgba: rgb
