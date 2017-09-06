@@ -96,8 +96,11 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
 export PATH="$HOME/.local/bin/:$PATH"
 
 export GOPATH=$HOME/coding/go
@@ -123,6 +126,7 @@ alias scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
 
 # python virtualenv
 [[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+[[ -f /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
 export WORKON_HOME=~/Envs
 
 # makes color constants available
@@ -145,6 +149,9 @@ dsh() { docker exec -it $1 /bin/bash; }
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+
 # asdf config
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+if [ -f $HOME/.asdf/asdf.sh ]; then
+  . $HOME/.asdf/asdf.sh
+  . $HOME/.asdf/completions/asdf.bash
+fi
