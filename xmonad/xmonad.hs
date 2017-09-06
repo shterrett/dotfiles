@@ -5,7 +5,8 @@ import XMonad.Hooks.ManageHelpers
 
 main = do
     xmonad defaultConfig {
-       normalBorderColor = solarizedBase01
+       modMask = mod4Mask
+     , normalBorderColor = solarizedBase01
      , focusedBorderColor = solarizedRed
      , terminal = "xterm"
      , manageHook = manageDocks <+> manageHook defaultConfig
