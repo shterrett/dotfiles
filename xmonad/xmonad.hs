@@ -11,4 +11,5 @@ main = do
      , terminal = "xterm"
      , manageHook = manageDocks <+> manageHook defaultConfig
      , layoutHook = avoidStruts $ layoutHook defaultConfig
+     , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
     }
