@@ -36,6 +36,7 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias prettyjson='python -m json.tool'
 
 alias cpp='xclip -selection clipboard'
+alias ppp='xclip -selection clipboard -out'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
