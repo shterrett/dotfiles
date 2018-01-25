@@ -103,15 +103,15 @@ fi
 
 export PATH="$HOME/.local/bin/:$PATH"
 
-export GOPATH=$HOME/coding/go
+export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
-export PATH=$PATH:/Users/stuart/coding/go_appengine
-export PATH=$PATH:/Users/stuart/coding/dart-sdk/bin
+export PATH=$PATH:$HOME/src/go_appengine
+export PATH=$PATH:$HOME/src/dart-sdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export PATH=$PATH:/Users/stuart/.cargo/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
 
