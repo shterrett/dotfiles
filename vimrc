@@ -193,6 +193,8 @@ map <leader>p :call Send_to_Tmux("make test\n")<cr>
 " C make and test
 map <leader>c :call Send_to_Tmux("make clean && make\n")<cr>
 
+au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
