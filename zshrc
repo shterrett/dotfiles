@@ -114,6 +114,8 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
 export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
@@ -141,10 +143,6 @@ setopt prompt_subst
 
 # tmuxinator autocomplete
 source ~/.bin/tmuxinator.zsh
-
-# if this is complaining, run `$ docker-machine start default
-command -v docker-machine >/dev/null 2>&1 && eval "$(docker-machine env default)"
-dsh() { docker exec -it $1 /bin/bash; }
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
