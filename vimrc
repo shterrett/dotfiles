@@ -49,6 +49,11 @@ augroup vimrcEx
 
   " Allow stylesheets to autocomplete hyphenated words
   autocmd FileType css,scss,sass setlocal iskeyword+=-
+
+  autocmd FileType typescript setlocal shiftwidth=4 tabstop=4
+  autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+  autocmd FileType tsx setlocal shiftwidth=4 tabstop=4
+  autocmd FileType jsx setlocal shiftwidth=4 tabstop=4
 augroup END
 
 " Softtabs, 2 spaces
