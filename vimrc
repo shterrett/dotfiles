@@ -154,6 +154,8 @@ let g:syntastic_c_include_dirs = ['/usr/local/apr/include/apr-1']
 let g:syntastic_python_checkers = ['flake8']
 
 let g:elm_format_autosave = 1
+let g:rustfmt_autosave = 1
+let g:hindent_on_save = 1
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
