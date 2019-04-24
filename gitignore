@@ -11,5 +11,5 @@ tmp/**/*
 !tmp/cache/.keep
 zeus.json
 .ruby-version
-.idea/
+.idea
 *.iml

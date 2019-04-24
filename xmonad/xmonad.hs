@@ -2,6 +2,7 @@ import XMonad
 import Solarized
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
+import XMonad.Hooks.SetWMName
 import qualified Data.Map as M
 
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
@@ -17,4 +18,5 @@ main = do
      , layoutHook = avoidStruts $ layoutHook defaultConfig
      , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
      , keys = \c -> myKeys c `M.union` keys defaultConfig c
+     , startupHook = setWMName "LG3D"
     }
