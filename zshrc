@@ -114,8 +114,6 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
 
 # Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
 export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
@@ -125,11 +123,6 @@ fi
 
 # scheme alias
 alias scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
-
-# python virtualenv
-[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-[[ -f /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
-export WORKON_HOME=~/Envs
 
 # makes color constants available
 autoload -U colors
