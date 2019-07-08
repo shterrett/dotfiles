@@ -44,6 +44,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'udalov/kotlin-vim'
 Plugin 'ianks/vim-tsx'
+Plugin 'junegunn/vim-easy-align'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
