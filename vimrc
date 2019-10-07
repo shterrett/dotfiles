@@ -205,6 +205,21 @@ nmap ga <Plug>(EasyAlign)
 tno <Esc> <C-\><C-n>
 tno <A-[> <Esc>
 
+" fzf
+nnoremap fb : Buffers<CR>
+nnoremap ff : Files<CR>
+nnoremap ft : Tags<CR>
+nnoremap fl : Lines<CR>
+nnoremap fe : Ghcid<CR>
+nnoremap fr : Rg<CR>
+nnoremap <expr> <Leader>u ":Rg! " . expand('<cword>') . "<CR>"
+command! -bang -nargs=* Rg
+      \ call fzf#vim#grep(
+      \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+      \   <bang>0 ? fzf#vim#with_preview('up:60%')
+      \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+      \   <bang>0)
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
