@@ -72,7 +72,10 @@
 
     ;; Vim emulation
     evil
-    evil-surround))
+    evil-surround
+
+    ;; color theme
+    solarized-theme))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -153,9 +156,30 @@
        ("\\.lagda.md\\'" . agda2-mode))
      auto-mode-alist))
 
-default to mononoki
+;; default to mononoki
 (set-face-attribute 'default nil
     :family "mononoki"
     :height 120
     :weight 'normal
     :width  'normal)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(package-selected-packages
+   (quote
+    (solarized-theme tagedit smex rainbow-delimiters projectile paredit magit intero ido-ubiquitous goto-last-change exec-path-from-shell evil-surround clojure-mode-extra-font-locking cider changelog-url))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(load-theme 'solarized-light t)
