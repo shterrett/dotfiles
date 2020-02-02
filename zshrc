@@ -103,26 +103,11 @@ fi
 
 export PATH="$HOME/.local/bin/:$PATH"
 
-export GOPATH=$HOME/src/go
-export PATH=$PATH:$GOPATH/bin
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
-export PATH=$PATH:$HOME/src/go_appengine
-export PATH=$PATH:$HOME/src/dart-sdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
-
-# Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
-export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
-if [ -d "$GHC_DOT_APP" ]; then
-  export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
-fi
-
-# scheme alias
-alias scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
 
 # makes color constants available
 autoload -U colors
@@ -134,18 +119,7 @@ export CLICOLOR=1
 # expand functions in the prompt
 setopt prompt_subst
 
-# tmuxinator autocomplete
-source ~/.bin/tmuxinator.zsh
-
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-
-# asdf config
-if [ -f $HOME/.asdf/asdf.sh ]; then
-  . $HOME/.asdf/asdf.sh
-  . $HOME/.asdf/completions/asdf.bash
-fi
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
