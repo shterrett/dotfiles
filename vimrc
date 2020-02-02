@@ -118,14 +118,6 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" vim-rspec mappings
-nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
-nnoremap <Leader>s :call RunNearestSpec()<CR>
-nnoremap <Leader>l :call RunLastSpec()<CR>
-
-" Run commands that require an interactive shell
-nnoremap <Leader>r :RunInInteractiveShell<space>
-
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
@@ -168,8 +160,6 @@ colorscheme solarized
 let g:solarized_termcolors=16
 call togglebg#map("")
 
-let g:rspec_command = 'call Send_to_Tmux("nocorrect bundle exec rspec {spec}\n")'
-
 " Rename current file (thanks Gary Bernhardt)
 function! RenameFile()
   let old_name = expand('%')
@@ -187,12 +177,6 @@ set clipboard=unnamed
 set nofoldenable
 
 let g:tex_flavor='latex'
-
-" Python tests
-map <leader>p :call Send_to_Tmux("make test\n")<cr>
-
-" C make and test
-map <leader>c :call Send_to_Tmux("make clean && make\n")<cr>
 
 au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
 
