@@ -206,12 +206,12 @@ tno <Esc> <C-\><C-n>
 tno <A-[> <Esc>
 
 " fzf
-nnoremap fb : Buffers<CR>
-nnoremap ff : Files<CR>
-nnoremap ft : Tags<CR>
-nnoremap fl : Lines<CR>
-nnoremap fe : Ghcid<CR>
-nnoremap fr : Rg<CR>
+nnoremap <leader>b : Buffers<CR>
+nnoremap <leader>f : Files<CR>
+nnoremap <leader>t : Tags<CR>
+nnoremap <leader>l : Lines<CR>
+nnoremap <leader>e : Ghcid<CR>
+nnoremap <leader>r : Rg<CR>
 nnoremap <expr> <Leader>u ":Rg! " . expand('<cword>') . "<CR>"
 command! -bang -nargs=* Rg
       \ call fzf#vim#grep(
