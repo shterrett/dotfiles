@@ -7,7 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Define bundles via Github repos
 Plugin 'altercation/vim-colors-solarized'
@@ -35,6 +35,8 @@ Plugin 'ElmCast/elm-vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'neoclide/coc.nvim', { 'pinned': 1 }
+Plugin 'sdiehl/vim-ormolu'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
