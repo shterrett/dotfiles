@@ -134,8 +134,7 @@ export CLICOLOR=1
 # expand functions in the prompt
 setopt prompt_subst
 
-# tmuxinator autocomplete
-source ~/.bin/tmuxinator.zsh
+export XDG_CONFIG_HOME=/Users/stuart/.config
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
