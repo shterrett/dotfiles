@@ -104,7 +104,6 @@ fi
 export PATH="$HOME/.local/bin/:$PATH"
 
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
-export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export APP_ENVIRONMENT=development
@@ -129,3 +128,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
