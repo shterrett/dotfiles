@@ -1,0 +1,20 @@
+#lang racket
+
+(define just
+  (λ (x) (cons 'Just x)))
+
+(define nothing (cons 'Nothing ()))
+
+(define maybe
+  (λ (n j m)
+    (if (is-just m)
+        (j (cdr m))
+        n)))
+
+(define is-just
+  (λ (m)
+    (= (car m) 'Just)))
+
+(define is-nothing
+  (λ (m)
+    (= (car m) 'Nothing)))

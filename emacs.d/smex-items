@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ paredit-mode
+ racket-repl-exit
+ racket-repl
+ racket-run
+ list-packages
+ package-install
+ package-refresh-contents
+)
+
+;; ----- smex-data -----
+(
+ (package-refresh-contents . 1)
+ (package-install . 2)
+ (list-packages . 1)
+ (paredit-mode . 4)
+ (racket-run . 1)
+ (racket-repl . 2)
+ (racket-repl-exit . 1)
+)

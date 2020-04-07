@@ -139,7 +139,7 @@ let g:syntastic_check_on_open=0
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:syntastic_c_include_dirs = ['/usr/local/apr/include/apr-1']
 let g:syntastic_python_checkers = ['flake8']
-
+let g:syntastic_enable_racket_racket_checker=1
 let g:elm_format_autosave = 1
 let g:rustfmt_autosave = 1
 
