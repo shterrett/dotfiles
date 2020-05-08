@@ -15,6 +15,8 @@ fpath=(~/.zsh/completion $fpath)
 autoload -U compinit
 compinit
 
+autoload -U +X bashcompinit && bashcompinit
+
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
@@ -125,7 +127,13 @@ export XDG_CONFIG_HOME=/Users/stuart/.config
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# stack autocomplete
+eval "$(stack --bash-completion-script stack)"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+test -e "${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"

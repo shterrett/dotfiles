@@ -26,6 +26,7 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+  pager = delta --theme="\"Solarized (light)\""
 [merge]
   ff = only
   conflictstyle = diff3
