@@ -35,6 +35,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'wlangstroth/vim-racket'
+Plugin 'neovimhaskell/haskell-vim.git'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
