@@ -201,7 +201,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 3200 1777 0 0 3200 1800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1600 0 1595 1777 0 0 3200 1777 </string>
+	<string>1600 1300 665 477 0 0 3200 1777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -836,11 +836,11 @@
 			<key>Name</key>
 			<string>Light</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 24</string>
+			<string>Monaco 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hasklig-Regular 26</string>
+			<string>Hasklig-Regular 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1632,12 +1632,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {3200, 1800}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{900, 1204}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A046ED9A-DBCD-49FB-A8B9-E4971C77879A</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>22</integer>
+	<integer>23</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2400,7 +2400,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-23T12:59:41Z</date>
+	<date>2020-06-09T13:07:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2411,6 +2411,8 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.9</string>
 </dict>

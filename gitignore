@@ -13,3 +13,5 @@ zeus.json
 .ruby-version
 .idea
 *.iml
+.ghci
+.ghcid

@@ -23,6 +23,8 @@
   up = !git fetch origin && git rebase origin/master
   fdiff = diff --name-status
   graph = log --all --decorate --oneline --graph
+  recent = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  br = for-each-ref --sort=committerdate refs/heads/ --format='%(color: red)%(committerdate:short) %(color: cyan)%(refname:short)'
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
