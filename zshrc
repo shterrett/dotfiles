@@ -136,4 +136,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-test -e "${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" && source "${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
