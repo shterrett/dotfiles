@@ -199,11 +199,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1610 1326 620 392 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1915 2137 0 0 3840 2160 </string>
+	<string>0 300 810 577 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1915 2137 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 7 1915 1061 0 0 3840 2137 </string>
+	<string>0 491 825 577 0 0 3840 2137 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1621,15 +1621,23 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7</string>
 		<string>3.3.9</string>
 		<string>3.3.11</string>
+		<string>3.3.7</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
 		<string>Monaco</string>
 		<string>Hasklig</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {3840, 2160}}</string>
+		<key>topLeft</key>
+		<string>{1617, 1756}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -1640,7 +1648,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A046ED9A-DBCD-49FB-A8B9-E4971C77879A</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>25</integer>
+	<integer>28</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2403,13 +2411,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-02T14:15:32Z</date>
+	<date>2020-08-13T13:07:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>3109334861</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>Size Changes Affect Profile</key>
 	<true/>
 	<key>SoundForEsc</key>
@@ -2419,6 +2427,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11</string>
+	<string>3.3.12</string>
 </dict>
 </plist>
