@@ -1,0 +1,1 @@
+/Users/stuart/coding/solarized/vim-colors-solarized/colors/solarized.vim
